@@ -3,12 +3,15 @@ import imageio
 import numpy as np
 from imageio import imread
 from scipy import ndimage
+from scipy import misc
+from PIL import Image, ImageFilter
 
 
 def main():
-    
+
+
     im = imageio.imread('lena_gray_512_salt_pepper.tif')
-    im2 = imageio.imread('house.tif')
+    im2 = imageio.imread('biel.png')
     im3 = imageio.imread('cameraman.tif')
     
     k = np.ones((3,3),np.float32)/9
